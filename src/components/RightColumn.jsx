@@ -49,12 +49,12 @@ const RightColumn = () => {
                                     <p className='text-4xl max-md:text-2xl font-medium'>{cat.name}</p>
                                     <div className='flex flex-row items-center gap-2 absolute bottom-4'><p>Shop now</p><ArrowRightIcon /></div>
                                 </div>
-                                <div onClick={() => navigateProduct(cat.id)} className='col-span-1 lg:h-[360px] border-b border-l border-[#121212] cursor-pointer'>
-                                    <img src={cat.image} alt={cat.name} className='w-full h-full object-cover' />
+                                <div onClick={() => navigateProduct(cat.id)} className='col-span-1 lg:h-[360px] border-b border-l border-[#121212]'>
+                                    <img src={cat.image} alt={cat.name} className='w-full h-full object-cover cursor-pointer' />
                                 </div>
                             </> : <>
-                                <div onClick={() => navigateProduct(cat.id)} className='col-span-1 lg:h-[360px] border-b border-l border-[#121212] cursor-pointer'>
-                                    <img src={cat.image} alt={cat.name} className='w-full h-full object-cover' />
+                                <div onClick={() => navigateProduct(cat.id)} className='col-span-1 lg:h-[360px] border-b border-l border-[#121212]'>
+                                    <img src={cat.image} alt={cat.name} className='w-full h-full object-cover cursor-pointer' />
                                 </div>
                                 <div onClick={() => navigateProduct(cat.id)} className='col-span-1 lg:h-[360px] flex justify-center items-center relative border-b border-l border-[#121212] cursor-pointer'>
                                     <p className='text-4xl max-md:text-2xl font-medium'>{cat.name}</p>
