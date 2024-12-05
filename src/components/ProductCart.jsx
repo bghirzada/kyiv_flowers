@@ -3,7 +3,7 @@ import { BasketContext } from '../context/BasketContext'
 
 const ProductCart = ({ product }) => {
 
-    const { basketItems, setBasketItems, handleBasket } = useContext(BasketContext)
+    const { basketItems, handleBasket } = useContext(BasketContext)
 
     const inBasket = basketItems.some(item => item.id === product.id)
 

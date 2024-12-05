@@ -5,7 +5,7 @@ import ShopIcon from './svgs/ShopIcon'
 import { BasketContext } from '../context/BasketContext'
 import { useTranslation } from 'react-i18next'
 const Header = () => {
-    const { basketItems, setBasketItems, handleBasket } = useContext(BasketContext)
+    const { basketItems } = useContext(BasketContext)
     const { t, i18n } = useTranslation()
     return (
         <nav className='h-16 flex justify-between border-b-[0.5px] border border-[#121212]' >
@@ -33,7 +33,7 @@ const Header = () => {
                 <Link className='w-1/2 flex items-center text-center justify-center border sm:border-l-[0.5px] border-t-[0px] border-b-[0.5px] border-[#121212]'>
                     <p className='max-lg:hidden'>{t("cart")} <span className='rounded-full px-2 bg-rose-300 absolute top-3'>{basketItems.length}</span></p>
                     <div className='lg:hidden'>
-                        <ShopIcon /> <span className='rounded-full px-2 bg-rose-400 absolute top-3'>{basketItems.length}</span> 
+                        <ShopIcon /> <span className='rounded-full px-2 bg-rose-400 absolute top-3'>{basketItems.length}</span>
                     </div>
                 </Link>
             </div>

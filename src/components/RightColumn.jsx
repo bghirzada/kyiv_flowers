@@ -7,7 +7,7 @@ import ArrowLeftIcon from '../components/svgs/ArrowLeftIcon'
 // import freshFlowers from '../assets/cardItems/freshFlowers.png'
 // import livePlants from '../assets/cardItems/livePlants.png'
 import axios from 'axios'
-import { useNavigate, useNavigation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const RightColumn = () => {
 
